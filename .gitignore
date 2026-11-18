@@ -1,0 +1,80 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Model weights & checkpoints (do not push heavy binary files to git)
+weights/*
+!weights/.gitkeep
+!weights/README.md
+*.pt
+*.onnx
+*.engine
+*.keras
+*.tflite
+*.h5
+*.pth
+*.ckpt
+ocr_train/base/*.keras
+
+# Training runs & logs
+runs/
+wandb/
+
+# Datasets & outputs
+datasets/
+extracted_plates/
+reports/
+output/
+outputs/
+*.csv
+!evaluation/*.csv
+!evaluation/archive/*.csv
+
+# Media & Videos
+*.mp4
+*.MP4
+*.mov
+*.MOV
+*.avi
+*.mkv
+demo_videos/
+demovid/
+demovid_1080/
+new_demo_video/
+new_model/
+
+# Archives & Documents
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+*.pdf
+
+# Environment & Secrets
+.env
+.env.*
+*.log
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

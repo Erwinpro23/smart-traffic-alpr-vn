@@ -1,0 +1,23 @@
+# Nguồn dữ liệu detector (chỉ ảnh giao thông Việt Nam, nhãn người gán sẵn).
+# Đã kiểm tra bằng mắt 2026-10-20. Loại: viet/vehicles-xqno3 và yolo-dy7ke/yolo11_4v (ảnh web nước ngoài),
+# haihovan/vietnam-vehicles-camera-view (định dạng keypoint, 156 ảnh).
+det_sources:
+  - name: rf_vietnamese_vehicle
+    type: roboflow
+    workspace: car-classification
+    project: vietnamese-vehicle
+    version: 3
+    # Tên lớp trong export là số; nghĩa xác định qua crop mẫu
+    class_map: {"0": car, "1": motorcycle, "2": truck, "3": bus}
+  - name: kg_hcmc
+    type: kaggle
+    slug: khoakait/transportation-in-ho-chi-minh-city
+    class_map: {bus: bus, car: car, motorbike: motorcycle, truck: truck}
+  - name: kg_vnveh
+    type: kaggle
+    slug: duongtran1909/vietnamese-vehicles-dataset
+    # Chỉ lấy phần ban ngày: phần đêm có ảnh xoay/augment -> rò rỉ qua các split
+    subdir: daytime-dataset
+    # Không có data.yaml; nghĩa lớp xác định qua crop mẫu
+    names: ["0", "1", "2", "3"]
+    class_map: {"0": motorcycle, "1": car, "2": bus, "3": truck}
