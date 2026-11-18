@@ -2,7 +2,6 @@
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL_3.0-purple.svg)](LICENSE)
-[![CI Tests](https://github.com/your-username/ALPR-Vietnamese/actions/workflows/ci.yml/badge.svg)](https://github.com/your-username/ALPR-Vietnamese/actions)
 [![CUDA Supported](https://img.shields.io/badge/CUDA-12.x-green.svg)](https://developer.nvidia.com/cuda-toolkit)
 
 Hệ thống nhận diện phương tiện và đọc biển số xe Việt Nam end-to-end trên luồng video giao thông thời gian thực (Real-time Video ALPR), tối ưu hóa tăng tốc suy luận trên GPU NVIDIA (CUDA Graphs & ONNX Runtime GPU).
