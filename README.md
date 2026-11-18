@@ -5,12 +5,9 @@
 [![CUDA Supported](https://img.shields.io/badge/CUDA-12.x-green.svg)](https://developer.nvidia.com/cuda-toolkit)
 
 Hệ thống nhận diện phương tiện và đọc biển số xe Việt Nam end-to-end trên luồng video giao thông thời gian thực (Real-time Video ALPR), tối ưu hóa tăng tốc suy luận trên GPU NVIDIA (CUDA Graphs & ONNX Runtime GPU).
-
-![Demo Results](docs/demo.jpg)
-
 ---
 
-## 🚀 Tính năng nổi bật
+## 🚀 Tính năng 
 
 1. **Phát hiện & Phân loại phương tiện (Vehicle Detection)**: Mô hình YOLO11s nhận diện 4 lớp phương tiện giao thông phổ biến tại Việt Nam (xe máy, ô tô, xe buýt, xe tải), kết hợp thuật toán **ByteTrack** bám vết liên tục qua từng khung hình.
 2. **Phát hiện biển số (License Plate Detection)**: YOLOv9s (`v62`) dò tìm biển số xe (biển vuông 2 dòng, biển dài 1 dòng) trên toàn bộ khung hình ở độ phân giải 640/768 px.
