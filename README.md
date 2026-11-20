@@ -11,7 +11,7 @@ Hệ thống end-to-end phát hiện phương tiện, bám vết và đọc bi�
 ## 🚀 Tính năng
 
 1. **Phát hiện & phân loại phương tiện:** YOLO11s nhận diện 4 lớp (xe máy, ô tô, xe buýt, xe tải), kết hợp **ByteTrack** để bám vết từng xe qua các khung hình.
-2. **Phát hiện biển số:** YOLOv9s (`v62`) tìm biển số trên toàn khung hình ở 640/768 px, gồm cả biển vuông 2 dòng và biển dài 1 dòng.
+2. **Phát hiện biển số:** YOLOv9s (`Wiliv5.pt`) tìm biển số trên toàn khung hình ở 640/768 px, gồm cả biển vuông 2 dòng và biển dài 1 dòng.
 3. **Tiền xử lý ảnh biển số:** đo độ nét (Laplacian variance), nắn phối cảnh, cân bằng sáng CLAHE, tách biển 2 dòng khi cần.
 4. **OCR & chuẩn hoá cú pháp:** `fast-plate-ocr` (`cct-s-v2-global` hoặc bản fine-tune), kiểm tra theo 63 mã tỉnh/thành và sửa ký tự hay nhầm theo vị trí (O/0, I/1, B/8, S/5).
 5. **Bỏ phiếu đa khung hình:** gộp kết quả đọc theo từng vị trí ký tự qua nhiều frame của mỗi xe, có trọng số theo độ nét và độ tin cậy, giúp loại biển rác.
