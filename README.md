@@ -117,7 +117,6 @@ ALPR-Vietnamese/
 │   ├── train_plate_detector.ipynb      # Huấn luyện detector biển số
 │   ├── eda_dataset.ipynb               # Phân tích khám phá dữ liệu (EDA)
 │   └── pipeline_vehicle_ocr_counting.ipynb # Demo pipeline từng bước
-├── docs/                    # Tài liệu kỹ thuật, báo cáo & hình ảnh minh họa
 ├── weights/                 # Thư mục chứa trọng số mô hình (.gitkeep)
 ├── tests/                   # Bộ kiểm thử tự động (Unit tests)
 ├── requirements.txt         # Khai báo các thư viện phụ thuộc
