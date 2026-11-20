@@ -156,7 +156,7 @@ File model không lưu trong Git. Tải tại **[GitHub Releases](https://github
 | File | Mô tả | Bắt buộc |
 |---|---|---|
 | `vehicle_det.pt` | YOLO11s phát hiện 4 loại phương tiện | ✅ |
-| `v62.pt` | YOLOv9s phát hiện biển số Việt Nam | ✅ |
+| `Wiliv5.pt` | YOLOv9s phát hiện biển số Việt Nam | ✅ |
 | `ocr_vn.onnx` + `ocr_vn_plate_config.yaml` | OCR fine-tune cho biển VN | Tuỳ chọn |
 
 Nếu không có `ocr_vn.onnx`, chương trình dùng mô hình OCR mặc định `cct-s-v2-global`, được `fast-plate-ocr` tự tải ở lần chạy đầu.
@@ -165,7 +165,7 @@ Cấu trúc sau khi tải:
 ```
 weights/
 ├── vehicle_det.pt
-├── v62.pt
+├── Wiliv5.pt
 ├── ocr_vn.onnx                 # tuỳ chọn
 └── ocr_vn_plate_config.yaml    # tuỳ chọn
 ```
@@ -249,7 +249,7 @@ python scripts/train_vehicle_det.py --balanced --epochs 100 --batch 16
 
 ### 2. Detector biển số
 
-Mở [`notebooks/train_plate_detector.ipynb`](notebooks/train_plate_detector.ipynb) trên Kaggle hoặc Google Colab (bật GPU và Internet). Sau khi huấn luyện, đổi tên model thu được thành `v62.pt` (hoặc tên bạn chọn) và đặt vào `weights/`.
+Mở [`notebooks/train_plate_detector.ipynb`](notebooks/train_plate_detector.ipynb) trên Kaggle hoặc Google Colab (bật GPU và Internet). Sau khi huấn luyện, đổi tên model thu được thành `Wiliv5.pt` (hoặc tên bạn chọn) và đặt vào `weights/`.
 
 ### 3. Fine-tune OCR cho biển số Việt Nam
 
